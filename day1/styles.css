@@ -1,0 +1,72 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin:0;
+    box-sizing: border-box;
+    height:100vh;
+    font-weight:400;
+    background-color:#e9e9e9;
+    padding: 40px;
+}
+
+.section{
+
+}
+.first-section{
+    background-image: url('../day1/bg.jpg');
+    background-repeat: no-repeat;
+    filter:brightness(80%); 
+    background-size: cover;  
+    background-position: center;
+    color: orangered;
+     height: 100%; 
+     box-shadow: 3px 3px 5px 6px #ccc;;
+}
+.first-section-content{
+    text-align: center;
+    padding:200px 0;
+    
+}
+h3{
+    letter-spacing: 10px;
+    font-size:22px;
+}
+h5{
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+p{
+    font-weight: 400;
+    font-size: 14px;
+    width: 40%;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+}
+@media only screen and (max-width: 600px) {
+    p{
+        width:100%;
+    }
+}
+.image{
+    width:50%;
+    object-fit: cover;
+}
+
+.contact-btn{
+    border: 1px solid orangered;
+    color:orangered;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all .3s;
+    box-shadow: none;
+    font-weight: 700;
+    
+}
+.contact-btn:hover{
+    transform: scale(1.05);
+    background-color: white;
+    color: orangered;
+}
