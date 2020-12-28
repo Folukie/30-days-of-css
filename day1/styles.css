@@ -18,7 +18,7 @@ body{
     filter:brightness(80%); 
     background-size: cover;  
     background-position: center;
-    color: orangered;
+    color: green;
      height: 100%; 
      box-shadow: 3px 3px 5px 6px #ccc;;
 }
@@ -49,8 +49,8 @@ p{
 }
 
 .contact-btn{
-    border: 1px solid orangered;
-    color:orangered;
+    border: 1px solid green;
+    color:green;
     background-color: transparent;
     border-radius: 5px;
     padding: 10px 15px;
@@ -63,13 +63,13 @@ p{
 .contact-btn:hover{
     transform: scale(1.05);
     background-color: white;
-    color: orangered;
+    color: green;
 }
 @media only screen and (max-width: 600px) {
     body{
         padding: 0 !important;
     }
     p{
-        width:100%;
+        width:100% !important;
     }
 }
