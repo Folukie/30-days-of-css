@@ -1,0 +1,112 @@
+html{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:400;
+}
+body{
+    
+    margin:0;
+    box-sizing: border-box;
+    height:100vh;
+    padding: 0;
+    -webkit-animation: all 10s infinite;
+    animation: all 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+@keyframes all {
+    0%{
+        background-color: #d1cecf;
+        color:#c88d27;
+    }
+    20% {
+        background-color: #45a3e5;
+        color:white;
+    }
+
+    40% {
+        background-color: #66bf39;
+        color:red;
+    }
+
+    60% {
+        background-color: #eb670f;
+        color:purple;
+    }
+
+    80% {
+        background-color: #f35;
+        color: #633A27;
+    }
+
+    100% {
+        background-color: #864cbf;
+        color: #130d0b;
+    }
+}
+
+
+.sections{
+    display:flex;
+    justify-content: space-between;
+}
+.first-section{
+    margin: auto;
+}
+.personal-image{
+    width:40%;
+    border-radius: 100%;
+}
+h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+h5{
+    font-weight: 300;
+    font-size: 18px;
+}
+h6{
+    color: #aeacad;
+    font-weight: 300;
+    font-size: 16px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+}
+.fashion{
+    color: #c88d27;
+}
+.music{
+    color: #ad7f8b;
+}
+.img:hover h1{
+    color:red;
+}
+.food{
+    color: #ad562b ;
+}
+.movies{
+    color:#633a27;
+}
+.second-section{
+    display: flex;
+    height: 50% !important;
+}
+.image-row{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+img{
+    object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+    .second-section{
+        display: none;
+    }
+}
