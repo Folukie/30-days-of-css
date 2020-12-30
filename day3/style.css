@@ -180,13 +180,7 @@ p{
     to {opacity: 1}
   }
   
-@media only screen and (max-width: 1270px) {
-    body{
-        
-        padding: 10px 50px;
-    
-    }
-}
+
 @media only screen and (max-width: 900px) {
     body{
         padding: 6px 10px;
@@ -205,8 +199,14 @@ p{
         grid-template-columns: 1fr;
     }
     .main-img{
-        width:300px;
+        width:200px;
        
+    }
+    .content{
+        padding: 10px;
+    }
+    .logo{
+        margin:0;
     }
     ul{
         display: none;
