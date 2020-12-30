@@ -252,7 +252,7 @@ p{
       
       /* Style the hamburger menu */
       .topnav a.icon {
-        background: black;
+        background: rgb(58, 58, 58);
         display: block;
         position: absolute;
         right: 0;
