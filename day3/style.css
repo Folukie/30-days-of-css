@@ -21,6 +21,9 @@ nav{
     display: flex;
     justify-content: space-between;
 }
+.navigation{
+    display: none;
+}
 .logo{
     color:orangered;
     font-weight: 800;
@@ -201,7 +204,9 @@ p{
     }
     
    
-    
+    .navigation{
+        display: block;
+    }
     section{
         display: grid;
         grid-template-columns: 1fr;
@@ -221,33 +226,49 @@ p{
     ul{
         display: none;
     }
-    .main-btn{
-        border: none;
-        font-size: 13px;
-        font-weight: 500;
+    .btn-row{
+        display:none;
     }
-    .login{
-        color:orangered;
-        background-color: transparent;
-    }
-    .signup{
-        background-color: orangered;
-        color:white;
-        padding: 10px ;
-        border-radius: 5px;
-    }
-    .explore-btn{
-        padding: 10px 15px;
-        border: 1.5px solid orangered;
-        margin-bottom: 30px;
-        background-color: white;
-        font-weight: 600;
-        font-size: 12px;
-        border-radius: 5px;
-    }
-    .explore-btn:hover{
-        color: orangered;
-        background-color: #fff2f2;
-    }
+   
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+      }
+      
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      /* Style navigation menu links */
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      /* Style the hamburger menu */
+      .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      /* Add a grey background color on mouse-over */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      /* Style the active link (or home/logo) */
+      .active {
+        background-color: #eca388;
+        color: white;
+      }
     
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../day3/style.css">
     <title>Day 3</title>
 </head>
@@ -22,9 +23,31 @@
                 <li>PROMO</li>
             </ul>
         </div>
-        <div>
+        <div class="btn-row">
             <button class="login main-btn">LOG IN</button>
             <button class="signup main-btn">SIGN UP</button>
+        </div>
+        <div class="navigation">
+            <div class="topnav">
+                <a href="#home" class="active">Logo</a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="javascript:void(0);">HOME</a>
+                    <a href="javascript:void(0);">NEW ARRIVALS</a>
+                    <a href="javascript:void(0);">ACCESSORIES</a>
+                    <a href="javascript:void(0);">PROMO</a>
+                    <div>
+                        <button class="login main-btn">LOG IN</button>
+                        <button class="signup main-btn">SIGN UP</button>
+                    </div>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        
+
         </div>
     </nav>
     <section>
@@ -107,6 +130,14 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
     </script>
 </body>
