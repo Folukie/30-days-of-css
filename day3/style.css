@@ -37,25 +37,33 @@ li{
    font-weight: 500;
    
 }
+li,
 .active-nav{
     position: relative;
 
 }
-.active-nav::after{
+
+li::before{
     content: "";
-    height:100px ;
-    width:30px;
-    color:orangered;
-    transition: all .3s;
+    height:2px ;
+    width:20px;
+    background-image: linear-gradient(to right, #da8a6c,orangered);
+    transition: all .2s;
     position: absolute;
-    top:0;
-    
+    bottom: -5px;
+    left: 15px;
+    opacity: 0;
+}
+li:hover::before,
+.active-nav::before{
+  
+   opacity: 1;
 }
 li:hover,
 .active-nav{
    color: #333333;
-  
 }
+
 
 
 section{
@@ -200,10 +208,12 @@ p{
     }
     .main-img{
         width:200px;
+        display: flex;
+    margin: auto;
        
     }
     .content{
-        padding: 10px;
+        padding: 30px 15px;
     }
     .logo{
         margin:0;
