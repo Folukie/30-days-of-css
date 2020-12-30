@@ -181,7 +181,7 @@ p{
   }
   @media only screen and (max-width: 900px) {
     body{
-        padding: 60px 100px;
+        padding: 6px 10px;
         height:100vh;
     }
     .content{
