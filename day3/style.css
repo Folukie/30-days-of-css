@@ -235,7 +235,9 @@ p{
         background-color: #333;
         position: relative;
       }
-      
+      .mylinks-link{
+          font-weight: 500;
+      }
       /* Hide the links inside the navigation menu (except for logo/home) */
       .topnav #myLinks {
         display: none;
