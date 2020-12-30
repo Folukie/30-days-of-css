@@ -1,0 +1,242 @@
+html{
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    background-image: linear-gradient(to right,#e48786 0%,#ED5554 100%);
+    margin:0;
+    box-sizing: border-box;
+    height:100vh;
+    font-weight:400;
+    padding: 60px 200px;
+
+}
+.content{
+    background-color: #fff6f6;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 50px;
+    height:85%;      
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color:orangered;
+    font-weight: 800;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between !important;
+}
+li{
+   margin: 0 15px;
+   color:#a0a0a0;
+   font-size: 14px;
+   font-weight: 500;
+   
+}
+.active-nav{
+    position: relative;
+
+}
+.active-nav::after{
+    content: "";
+    height:100px ;
+    width:30px;
+    color:orangered;
+    transition: all .3s;
+    position: absolute;
+    top:0;
+    
+}
+li:hover,
+.active-nav{
+   color: #333333;
+  
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.main-img{
+    width:300px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+p{
+    color:grey;
+    font-weight: 400;
+    font-size: 15px;
+}
+.title{
+    color:#b9b6b6;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.main-btn{
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+.login{
+    color:orangered;
+    background-color: transparent;
+}
+.signup{
+    background-color: orangered;
+    color:white;
+    padding: 10px ;
+    border-radius: 5px;
+}
+.explore-btn{
+    padding: 10px 15px;
+    border: 1.5px solid orangered;
+    margin-bottom: 30px;
+    background-color: white;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.explore-btn:hover{
+    color: orangered;
+    background-color: #fff2f2;
+}
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+  /* Hide the images by default */
+  
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 7px 12px;
+    color: black;
+    background-color: rgb(199 199 199);
+    font-weight: bold;
+    font-size: 12px;
+    transition: 0.6s ease;
+    border-radius: 100%;
+    user-select: none;
+  }
+  .slide-img{
+      display: flex;
+      margin: auto;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  @media only screen and (max-width: 900px) {
+    body{
+        padding: 60px 100px;
+        height:100vh;
+    }
+    .content{
+       
+        height:100vh;      
+    }
+    
+   
+    
+    section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .main-img{
+        width:300px;
+        margin: auto;
+        display: flex;
+    }
+    ul{
+        display: none;
+    }
+    .main-btn{
+        border: none;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .login{
+        color:orangered;
+        background-color: transparent;
+    }
+    .signup{
+        background-color: orangered;
+        color:white;
+        padding: 10px ;
+        border-radius: 5px;
+    }
+    .explore-btn{
+        padding: 10px 15px;
+        border: 1.5px solid orangered;
+        margin-bottom: 30px;
+        background-color: white;
+        font-weight: 600;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .explore-btn:hover{
+        color: orangered;
+        background-color: #fff2f2;
+    }
+    
+}
+@media only screen and (max-width: 1270px) {
+    body{
+        
+        padding: 60px 100px;
+    
+    }
+}
