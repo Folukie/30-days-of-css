@@ -197,8 +197,7 @@ p{
     }
     .main-img{
         width:300px;
-        margin: auto;
-        display: flex;
+       
     }
     ul{
         display: none;
