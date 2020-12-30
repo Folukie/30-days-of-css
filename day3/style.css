@@ -184,9 +184,10 @@ p{
         padding: 6px 10px;
         height:100vh;
     }
-    .content{
-       
-        height:100vh;      
+    .slideshow-container {
+        max-width: 350px;
+        position: relative;
+        margin: 0;
     }
     
    
