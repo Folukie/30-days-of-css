@@ -179,10 +179,18 @@ p{
     from {opacity: .4}
     to {opacity: 1}
   }
-  @media only screen and (max-width: 900px) {
+  
+@media only screen and (max-width: 1270px) {
+    body{
+        
+        padding: 10px 50px;
+    
+    }
+}
+@media only screen and (max-width: 900px) {
     body{
         padding: 6px 10px;
-        height:100vh;
+        height:100%;
     }
     .slideshow-container {
         max-width: 350px;
@@ -232,11 +240,4 @@ p{
         background-color: #fff2f2;
     }
     
-}
-@media only screen and (max-width: 1270px) {
-    body{
-        
-        padding: 10px 50px;
-    
-    }
 }
