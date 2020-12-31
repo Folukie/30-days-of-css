@@ -169,19 +169,26 @@ footer h5{
 
 @media only screen and (max-width: 900px){
    .nav-section{
-    height: 50vh;
-    overflow: visible;
+    height: 60vh;
+    
     background: center;
+   }
+   .second-section {
+    z-index: 1000;
+    margin: -30px auto;
+    width: 80%;
+    padding: 10px 20px;
+    background-color: whitesmoke;
    }
     .nav-content{
         color:black;
     }
     .nav-content h1{
-    margin: 300px 280px 50px;
-    width: 500px;
+        margin: 100px auto 50px;
+        width: 300px;
     }
     .third-section {
-        margin: 820px 0 20px;
+        margin: 100px 0 20px;
     }
     .third-section-content {
         
@@ -190,15 +197,22 @@ footer h5{
     .featured-box {
         margin: 60px auto;
     }
-    
+
     .fifth-section {
         grid-template-columns: 1fr;
-        margin: 100px 280px;
+        margin: 100px auto;
     }
     .third-section h2{
-        margin: 0 250px;
+        margin: 0 auto;
         text-align: center;
-        width: 500px;
+       
+    }
+    .img-1 {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .fifth-section-content{
+        padding: 10px 20px;
     }
 }
   
