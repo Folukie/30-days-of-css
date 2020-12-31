@@ -188,8 +188,7 @@ footer h5{
         grid-template-columns: 1fr;
     }
     .featured-box {
-        margin: 60px 320px;
-        width: 500px;
+        margin: 60px auto;
     }
     .fifth-section {
         grid-template-columns: 1fr;
