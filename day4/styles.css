@@ -197,7 +197,7 @@ footer h5{
         grid-template-columns: 1fr;
     }
     .dropdown{
-        color:black;
+        color:black !important;
     }
     
     .featured-box {
