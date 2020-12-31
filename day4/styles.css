@@ -165,7 +165,9 @@ footer{
 footer h5{
    text-align: center;
 }
-
+.anim{
+    display: none;
+}
 
 @media only screen and (max-width: 900px){
    .nav-section{
@@ -197,6 +199,7 @@ footer h5{
     .dropdown{
         color:black;
     }
+    
     .featured-box {
         margin: 60px auto;
     }
@@ -216,6 +219,9 @@ footer h5{
     }
     .fifth-section-content{
         padding: 10px 20px;
+    }
+    .anim{
+        display: block;
     }
 }
   
