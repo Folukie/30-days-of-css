@@ -207,7 +207,9 @@ button{
         margin: auto;
     }
     .btn-div {
-        margin: -105px auto;
+        margin: -150px auto;
+       
+        padding: 160px 5px 20px;
     }
     .nav {
         flex-direction: column;
