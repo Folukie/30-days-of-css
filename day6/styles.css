@@ -1,0 +1,138 @@
+body{
+    margin: auto;
+    padding: 50px 150px;
+    background-image: linear-gradient(to right, #0e111996 0%, white 40%, white 65%, #0e111996 100%);
+}
+html{
+    font-family: 'Rubik', sans-serif;
+}
+.content-img{
+    background-image: url("../day6/images/image-2.png");
+    border-radius: 5px;
+    border-right: none;
+    width:50%;
+}
+.main{
+    margin-left: -30%;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.e-item-card-recently-viewed_stars {
+    color: #555;
+  }
+  
+  .m-item-card-recently-viewed_stars__orange {
+    color: #FFB632;
+  }
+  
+  .half {
+   color: #ECF0F2;
+  }
+.star{
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  margin-bottom: 15px;
+
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+}
+.content-text{
+    background-color: white;
+    padding: 80px 10px;
+}
+.breadcrumbs span{
+    color: #888;
+}
+.breadcrumbs{
+    margin-bottom: 20px;
+}
+.content-text h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+
+}
+.content-text h2{
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+.content-text h5{
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.rate,
+.vote{
+    margin-top: 6px;
+}
+.options{
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    margin-bottom: 40px;
+}
+label{
+    font-size: 12px;
+}
+select{
+    border-radius: 50px;
+    padding: 5px 10px;
+    width: 90px;
+    font-size: 12px;
+}
+.add{
+    background-color: #ED1D24;
+    color: white;
+    font-weight: 500;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    transition: all .2s;
+}
+.add:hover{
+    color: #ED1D24;
+    background-color: transparent;
+}
+.fa-heart{
+    color: #ED1D24;
+
+}
+.wish{
+    border: none;
+    background-color: transparent;
+    color:black;
+    font-weight: 400;
+} 
+
+@media only screen and (max-width: 900px){
+    .content {
+        grid-template-columns: 1fr;
+    }
+    body{
+        padding: 0;
+        height: 100vh;
+        background-image: none;
+        background-color: #00295880;
+    }
+    .breadcrumbs{
+        font-size: 16px;
+    }
+    .content-text h1 {
+        font-size: 40px;
+    }
+    .rate, .vote {
+        
+        font-size: 16px;
+    }
+    .content-text h2 {
+        font-size: 30px;
+    }
+    .content-text h5 {
+       
+        font-size: 18px;
+    }
+}
+
+  
