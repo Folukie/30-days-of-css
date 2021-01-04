@@ -1,0 +1,122 @@
+html{
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+
+    margin: 0;
+    background-color: hsl(204, 43%, 93%);  
+}
+.content{
+    max-width: 700px;
+    margin:50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 35px hsl(218, 22%, 67%);
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 5px 0;
+}
+
+
+.head {
+    grid-area: header;
+  background-color: #fff;
+  border-radius: 10px 10px 0px 0px;
+  padding: 30px 20px;
+  font-size: 9px;
+}
+.head h1 {
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+  
+.head h2 {
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+  
+.head p {
+    color: hsl(217, 22%, 67%);
+    font-size: 14px;
+    line-height: 1.5;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.subscription{
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    border-bottom-left-radius: 10px;
+    padding: 30px 20px;
+}
+.price {
+    font-size: 25px;
+  }
+  .subscription h4{
+      margin-bottom: 20px;
+  }
+  
+  .subscription span {
+    font-size: 10px;
+    color: #48d1cc;
+    padding-left: 5px;
+  }
+  .access {
+    color: rgba(255, 255, 255, 0.705);
+    font-weight: 400;
+    margin: 10px 0;
+  }
+  button {
+    background-color: hsl(71, 73%, 54%);
+    border: 1px solid hsl(71, 73%, 54%);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 14px;
+    box-shadow: 0px 10px 25px hsl(179, 62%, 43%);
+  }
+  button:hover {
+    cursor: pointer;
+    color: hsl(71, 73%, 54%);
+    background-color: transparent;
+  }
+
+.why {
+    background-color: hsla(179, 62%, 43%, 0.794);
+    font-weight: 200;
+    color: white;
+    border-bottom-right-radius: 10px;
+    padding: 30px 20px;
+  }
+  ul {
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.700);
+    padding: 10px 0 0;
+  }
+  li{
+    font-size: 16px;
+    margin: 4px 0;
+    font-weight: 400;
+  }
+
+
+  @media screen and (max-width: 750px) {
+    .content {
+      margin: 20px;
+    }
+  
+    .subscription {
+      border-radius: 0;
+    }
+  
+    .why {
+      border-radius: 0 0px 10px 10px;
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+  }
