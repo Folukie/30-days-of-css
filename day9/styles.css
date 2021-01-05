@@ -1,0 +1,140 @@
+html{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+body{
+    margin: 0;
+    background-image: url(../day9/images/bg-pattern-top-desktop.svg), url(../day9/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.main-content{
+    width: min-content;
+    margin: auto;
+    padding: 50px 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.first-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.users h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 40px;
+    width: 400px;
+}
+.users p{
+    color: hsl(303, 10%, 53%);
+    font-size: 16px;
+    width: 500px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.rating-box{
+    display:grid;
+    grid-template-columns: repeat(2, max-content) ;
+    grid-gap: 20px;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    width: max-content;
+    border-radius: 10px;
+}
+.rating-box-2{
+    margin-left: 30px;
+}
+.rating-box-3{
+    margin-left: 60px;
+}
+.rating-text{
+    color: hsl(300, 43%, 22%);
+    font-weight: 600;
+    font-size: 14px;
+}
+.second-section{
+    margin-top: 50px;
+    background-image: url("../day9/images/bg-pattern-bottom-desktop.svg");
+}
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+}
+.review-about{
+    display: grid;
+    grid-template-columns: repeat(2, max-content) ;
+    grid-gap: 20px;
+}
+.review-box{
+    background-color: hsl(300, 43%, 22%);
+    padding:30px;
+    border-radius: 10px;
+    height: fit-content;
+    width: 250px;
+}
+.review-image{
+    border-radius: 50%;
+    width: 50px;
+}
+.name{
+    color: hsl(300, 24%, 96%);
+    font-weight: 600;
+    font-size: 16px;
+}
+.verified{
+    color:hsl(333, 80%, 67%);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.review-text{
+    margin-top: 20px;
+}
+.review-text p{
+    color: hsl(300, 24%, 96%);
+    line-height: 1.6;
+    font-size: 14px;
+}
+.review-box-2{
+    margin-top: 40px;
+}
+.review-box-3{
+    margin-top: 80px;
+}
+@media screen and (max-width: 700px){
+    .main-content{
+        padding: 50px 20px;
+    }
+    .first-section{
+        display: inline-block;
+    }
+    .users{
+        text-align: center;
+    }
+    .users h1{
+        margin: auto;
+    }
+    .rating{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .rating-box{
+        display: inline-block;
+        text-align: center;
+        margin:0 0 20px 0;
+        width:auto;
+        
+    }
+    .reviews{
+        display: inline-block;
+    }
+    .review-box{
+        margin: 0 auto 20px 0;
+        width: auto;
+        padding: 40px 50px;
+    }
+}
