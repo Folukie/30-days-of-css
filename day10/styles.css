@@ -85,10 +85,7 @@ img {
         margin-left: 0;
       }
       .card{
-          margin-bottom: 30px;
-          width: 100%;
+          margin: 0 auto 30px;
       }
-      .content{
-          margin: 0 40px;
-      }
+     
 }
