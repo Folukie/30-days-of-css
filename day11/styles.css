@@ -1,0 +1,280 @@
+html {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400 !important;
+}
+body {
+  position: relative;
+  margin: 0;
+  background-color: hsl(270, 20%, 96%);
+}
+.background {
+  position: absolute;
+  height: 80vh;
+  z-index: -1;
+}
+.left-background {
+  background-image: linear-gradient(
+    to top,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  border-radius: 0 0 300px 300px;
+  left: -40px;
+  width: 30%;
+}
+.right-background {
+  background-color: hsl(276deg 100% 98%);
+  top: 110px;
+  border-radius: 300px 0 0 0;
+  right: 0;
+  width: 25%;
+}
+.person-img {
+    width: 30px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+.iphone-user-info{
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    grid-gap: 10px;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    color: white;
+    padding: 5px 10px;
+}
+.iphone-content-head {
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  border-radius: 28px 28px 10px 10px;
+}
+.head-iphone-head {
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+  z-index: 1;
+  border-radius: 10px 10px 100px 100px;
+  height: 18px;
+}
+.iphone-image {
+  border: 7px solid white;
+  border-radius: 30px;
+  width: 250px;
+  margin: 0 auto;
+  background-color: rgb(245, 243, 247);
+  box-shadow: rgba(0, 0, 0, 0.12) 8px 20px 25px;
+}
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 100px 200px;
+}
+.booking-content{
+    margin: auto;
+}
+.booking-content-title {
+  color: #3e2753;
+  font-weight: 500;
+  font-size: 40px;
+}
+.booking-content-paragraph {
+  color: #a39daa;
+  line-height: 2;
+  width:80%;
+}
+.head__app-head {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.app-head__nav-icon {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 11%;
+  font-size: 0.4rem;
+  font-weight: 400;
+}
+
+.app-head__user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 76%;
+}
+
+.user-info__info-text {
+  display: inline-block;
+  padding: 3px 10px;
+}
+
+.info-text-user-name {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  margin:2px 0;
+}
+
+.info-text-user-status{
+  font-size: 10px;
+  color: #d89eff;
+  margin: 0;
+}
+
+.body__chat {
+  display: inline-block;
+  width: 100%;
+}
+
+.body__chat--left .chat__message-item {
+  color: #9241c8;
+  background-color: #eee6f4;
+  border-radius: 13px 13px 13px 5px;
+}
+
+.body__chat--right .chat__message-item {
+  color: #6e5d7e;
+  background-color: white;
+  border-radius: 13px 13px 5px 13px;
+  margin-left: auto;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.body__chat--right .chat__images {
+  text-align: right;
+}
+
+.chat__messages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.chat__images {
+  margin: 4px;
+  height: 40px;
+}
+
+.chat__message-item {
+  max-width: 140px;
+  padding: 8px 10px;
+  margin: 4px 8px;
+  font-size: 0.5625rem;
+  text-align: left;
+}
+
+.chat__image-item {
+  margin: 0 4px;
+  width: 40px;
+  height: 100%;
+  display: inline-block;
+}
+
+.chat__image-item img {
+  width: 100%;
+  border-radius: 30%;
+}
+
+.chat__choice-item {
+  background: linear-gradient(to right, #e942ff, #8838ff);
+  color: white !important;
+  max-width: 150px;
+  height: 20px;
+  line-height: 20px;
+  display: flex;
+}
+
+.choice-item__radio-button {
+  display: inline-block;
+  border: 1px solid #e570ff;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  margin: 4px 8px 4px 0px;
+}
+
+.choice-item__title {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+.choice-item__price {
+  font-size: 12px;
+  font-weight: 500;
+  padding-right: 8px;
+  margin-left: auto;
+}
+
+.typebar__placeholder-text {
+  color: #c6cacd;
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  margin-left: 16px;
+}
+
+.typebar__send-button {
+  border-radius: 100%;
+  background-color: #3e2753;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  margin-left: auto;
+}
+.chat-app__typebar {
+    background-color: white;
+    display: flex;
+    border-radius: 100px;
+    margin: 5px;
+    padding: 6px 5px;
+}
+
+@media only screen and (max-width: 800px){
+    .main-content {
+        display: block;
+        padding: 10px;
+    }
+    .booking-content {
+        text-align: center;
+    }
+    .background{
+        height: 50vh;
+        width:50%;
+    }
+    .right-background{
+        top: 500px;
+    }
+    .booking-content-paragraph {
+        width: 100%;
+    }
+}
