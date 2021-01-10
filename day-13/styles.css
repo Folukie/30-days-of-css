@@ -144,7 +144,7 @@ strong{
 }
 @media screen and (max-width: 600px){
     body{
-        background-image: url('./images/bg-mobile.png');
+        background-image: url('../day13/images/bg-mobile.png');
         background-repeat: no-repeat;
         background-position: top -10px left;
         background-size: cover;
