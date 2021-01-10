@@ -163,7 +163,6 @@ strong{
     }
     .storage{
         background-color: hsl(228, 56%, 26%);
-        padding: 0;
         align-self: flex-end;
         padding: 20px 10px 0;
         flex-grow: 1.5;
