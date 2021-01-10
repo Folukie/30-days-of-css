@@ -1,0 +1,210 @@
+*, *::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color:  hsl(229, 57%, 11%);
+    color: hsl(243, 100%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 14px;
+    background-image: url('../day13/images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-position: bottom -60px right;
+}
+.main{
+   width: 60%;
+   margin: auto;
+   display: flex;
+   justify-content: space-around;
+}
+
+.fylo{
+    background-color: hsl(228, 56%, 26%);
+    padding: 30px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border-top-right-radius: 80px;
+    padding-right: 100px;
+    align-self: flex-start;
+}
+.icons{
+    margin-top: 10px;
+    width: 200px;
+}
+.icons img{
+    display: inline-block;
+    padding: 10px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+}
+.storage{
+    background-color: hsl(228, 56%, 26%);
+    padding: 10px;
+    align-self: flex-end;
+    padding: 20px 10px;
+    flex-grow: 1.5;
+    width: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+#used{
+    padding: 10px 0;
+    font-weight: 400;
+}
+.parent{
+    background-color: hsl(229, 57%, 11%);
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+}
+.value{
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+.value span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: hsl(243, 100%, 93%);
+    border-radius: 50%;
+}
+.left{
+    display: block;
+    text-align: left;
+    padding-top: 10px;
+}
+.right{
+    display: block;
+    text-align: right;
+    margin-top: -10px;
+}
+.gb-left{
+    background-color: hsl(243, 100%, 93%);
+    padding: 20px;
+    color: black;
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+}
+.gb-left::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: -25px;
+    border-width: 25px 0px 0px 25px;
+    border-style: solid;
+    border-color: hsl(243, 100%, 93%) transparent transparent;
+}
+.gb-left span{
+    color:  hsl(229, 7%, 55%);
+    font-weight: 400;
+}
+strong{
+    font-weight: 700;
+}
+
+
+/* media queries */
+@media screen and (max-width: 1024px){
+    .main{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+     }
+     .fylo{
+        padding-right: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    .main{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+     }
+     .fylo{
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width: 600px){
+    body{
+        background-image: url('./images/bg-mobile.png');
+        background-repeat: no-repeat;
+        background-position: top -10px left;
+        background-size: cover;
+    }
+    .main{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+     }
+     .fylo{
+         padding: 50px;
+        padding-right: 100px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    .storage{
+        background-color: hsl(228, 56%, 26%);
+        padding: 0;
+        align-self: flex-end;
+        padding: 20px 10px 0;
+        flex-grow: 1.5;
+        width: 100%;
+        margin: auto;
+        border-radius: 10px;
+        position: relative;
+    }
+    .gb-left{
+        background-color: hsl(243, 100%, 93%);
+        padding: 30px 20px;
+        color: black;
+        display: inline-block;
+        position: initial;
+        bottom: 0px;
+        left: 20px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        width: 60%;
+        margin: 0 auto;
+        transform: translate(40px, 40px);
+        font-weight: 700;
+        margin-top: -20px;
+        text-align: center;
+    }
+    .gb-left::before{
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        border-width:none;
+        border-style: none;
+        border-color: none;
+    }
+    .gb-left strong, .gb-left span{
+        font-weight: 700;
+    }
+    #used{
+        padding: 20px 0;
+    }
+    .parent{
+        margin-top: 10px;
+    }
+}
