@@ -1,0 +1,40 @@
+
+#menu {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  margin: 50px auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#menu ul li {
+  float: left;
+  margin: 0 5px;
+  list-style-type: none;
+}
+
+/* Menu Link Styles */
+#menu ul a {
+  display: block;
+  background: purple;
+  color: #fff;
+  height: 100px;
+  font: lighter 2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  text-decoration: none;
+  transition: all .35s ease-in-out;
+}
+
+/* Secondary Link Styles */
+#menu ul a:nth-of-type(even) {
+  text-shadow: 0 0 6px #fff;
+  background: rgb(211, 159, 231);
+  color: white;
+}
+
+/* Hover Slide */
+#menu ul li:hover :first-child {
+  margin-top: -110px;
+  height: 100px;
+
+}
